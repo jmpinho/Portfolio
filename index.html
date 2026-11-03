@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -13,10 +13,12 @@
     <title>Joao Mateus</title>
   </head>
   <body>
-    <header>
-      <img src="" alt="Logo" />
+    <header class="navbar">
+      <a href="/">
+        <img src="imagens/logo_navbar.png" alt="Logo" />
+      </a>
       <nav>
-        <ul>
+        <ul class="cabecalho-lista">
           <li>
             <a href="/">Home</a>
           </li>
@@ -29,26 +31,65 @@
           <li>
             <a href="/habilidades">Habilidades</a>
           </li>
-          <li>
-            <a href="/contatos">Contatos</a>
-          </li>
         </ul>
       </nav>
+      <a href="/contatos" class="cabecalho-lista contatos">Contatos</a>
     </header>
     <main>
-      <h2>FRONT END DEVELOPER</h2>
-      <h3>BASED IN BRASIL</h3>
-      <div class="details">
-        <div>
-          <div class="details-skills">
-            <p>/ DESENVOLVEDOR FRONT END</p>
-            <p>/ WEB DESIGN (UI/UX)</p>
-            <p>/ EXPERIÊNCIA AO CLIENTE</p>
-          </div>
-          <img src="" alt="" />
+      <section class="conteudo-home">
+        <div class="home-title">
+          <h2>FRONT END DEVELOPER</h2>
+          <h3>BASED IN BRASIL</h3>
         </div>
-        
-      </div>
+        <div class="details">
+          <div>
+            <div class="details-skills">
+              <p>/ DESENVOLVEDOR FRONT END</p>
+              <p>/ WEB DESIGN (UI/UX)</p>
+              <p>/ DESENVOLVIMENTO DE APLICAÇÕES</p>
+            </div>
+            <img src="/imagens/foto_principal.JPG" />
+          </div>
+          <p class="home-introduction">
+            Sou um Designer UI/UX que desenha experiências digitais com
+            personalidade, onde cada detalhe tem um propósito.
+          </p>
+        </div>
+      </section>
+      <section class="conteudo-projetos">
+        <h2>Projetos</h2>
+        <p>
+          Explore projetos que mostram como transformo ideias em interfaces:
+          entendendo o usuário, testando soluções e refinando cada detalhe até a
+          entrega
+        </p>
+        <ul class="projetos-lista">
+          <li>
+            <img
+              src="imagens/projeto-Synapse.png"
+              alt="imagem do projeto Synapse"
+            />
+            <footer>
+              <h3>Synapse</h3>
+              <div>
+                <p>Educacional | Website | React</p>
+              </div>
+            </footer>
+          </li>
+          <li>
+            <img
+              src="imagens/projeto-cha-lua-de-jade.png"
+              alt="imagem do projeto Chá Lua de Jade"
+            />
+            <footer>
+              <h3>Chá Lua de Jade</h3>
+              <div>
+                <p>E-commerce | Branding | React</p>
+              </div>
+            </footer>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
