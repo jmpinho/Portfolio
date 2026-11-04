@@ -18,8 +18,10 @@ body {
   font-family: var(--fonte-secundaria);
   user-select: none;
 }
-main {
-  padding: 0 20px;
+
+section,
+header {
+  padding: 1em;
 }
 
 /* INTRODUÇÃO */
@@ -133,6 +135,38 @@ main {
   margin: 0;
 }
 
+/* EXPERIENCIAS */
+.conteudo-experiencias {
+  padding: 30px 20px;
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+.conteudo-experiencias h2 {
+  font-family: var(--fonte-principal);
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+
+.experiencias {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.experiencia-card {
+  border-bottom: 1px solid var(--cinza);
+  padding-bottom: 10px;
+}
+
+.experiencia-card h3 {
+  font-size: 24px;
+}
+
+.experiencia-card p {
+  font-size: 16px;
+  color: var(--cinza);
+}
+
 @media screen and (min-width: 720px) {
   /* INTRODUÇÃO */
   .navbar {
@@ -211,12 +245,13 @@ main {
   /* PROJETOS */
 
   .conteudo-projetos {
-    margin-bottom: 40px;
+    height: 100vh;
   }
 
   .conteudo-projetos h2 {
     font-size: 48px;
     margin-bottom: 60px;
+    padding-top: 100px;
   }
 
   .conteudo-projetos p {
@@ -255,5 +290,28 @@ main {
 
   .projetos-lista li a footer {
     width: 100%;
+  }
+
+  /* EXPERIENCIAS */
+  .conteudo-experiencias {
+    padding: 60px;
+    height: 100vh;
+  }
+  .conteudo-experiencias h2 {
+    font-size: 48px;
+  }
+
+  .experiencias {
+    gap: 60px;
+  }
+
+  .experiencia-card {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .experiencia-card p {
+    max-width: 1000px;
   }
 }
