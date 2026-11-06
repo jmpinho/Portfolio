@@ -270,6 +270,17 @@ header {
   margin-bottom: 40%;
 }
 
+.contato-redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contato-redes a {
+  text-decoration: none;
+  color: var(--preto);
+}
+
 @media screen and (min-width: 720px) {
   /* INTRODUÇÃO */
   .navbar {
@@ -449,6 +460,7 @@ header {
     max-width: 70%;
     border-radius: 10px;
     margin-left: 20px;
+    cursor: pointer;
   }
 
   .card-habilidades.card2 {
@@ -457,5 +469,48 @@ header {
 
   .card-habilidades.card3 {
     margin-left: 20%;
+  }
+
+  /* CONTATOS */
+  .conteudo-contato {
+    height: 100vh;
+  }
+
+  .botao-disponivel {
+    max-width: 300px;
+  }
+
+  .botao-disponivel h3 {
+    font-size: 1em;
+  }
+
+  .conteudo-contato h2 {
+    font-size: 3em;
+    margin-top: 5%;
+  }
+
+  .conteudo-contato p {
+    font-size: 1.5em;
+  }
+
+  .texto-contato {
+    max-width: 700px;
+    margin: 2% auto;
+  }
+
+  .contatos-formas {
+    margin-bottom: 20%;
+  }
+
+  .contato-redes {
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid transparent;
+  }
+
+  .contato-redes a:hover {
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid var(--preto);
   }
 }
