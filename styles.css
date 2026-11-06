@@ -167,6 +167,109 @@ header {
   color: var(--cinza);
 }
 
+/* HABILIDADES */
+
+.conteudo-habilidades h2 {
+  font-family: var(--fonte-principal);
+  font-size: 32px;
+  margin: 60px auto;
+}
+
+.conteudo-habilidades h3 {
+  font-size: 20px;
+}
+
+.conteudo-habilidades li {
+  list-style: none;
+}
+
+.conteudo-habilidades button {
+  margin-bottom: 15px;
+  background-color: rgb(209, 209, 209);
+  border: none;
+  width: 100%;
+  gap: 10px;
+  padding: 15px;
+}
+.habilidade-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.conteudo-habilidades img {
+  width: 30px;
+}
+
+.card-habilidades .texto-habilidades {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.card-habilidades.ativo {
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+.card-habilidades.ativo .texto-habilidades {
+  max-height: 200px;
+  opacity: 1;
+  visibility: visible;
+  margin-top: 10px;
+}
+
+.card-habilidades.ativo .texto-habilidades {
+  display: block;
+}
+
+.conteudo-contato {
+  margin-top: 100px;
+}
+
+.botao-disponivel {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid var(--cinza);
+  border-radius: 50px;
+  padding: 10px;
+  margin: 40px auto;
+}
+
+.botao-disponivel img {
+  width: 10px;
+  height: 10px;
+}
+
+.botao-disponivel h3 {
+  font-size: 10px;
+}
+
+.conteudo-contato h2 {
+  text-align: center;
+  font-family: var(--fonte-principal);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.texto-contato {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contatos-formas {
+  text-align: center;
+  color: var(--cinza);
+  margin-bottom: 40%;
+}
+
 @media screen and (min-width: 720px) {
   /* INTRODUÇÃO */
   .navbar {
@@ -177,6 +280,18 @@ header {
   .navbar img {
     height: 60px;
     width: auto;
+  }
+
+  .navbar-item {
+    border-bottom: 2px solid transparent;
+  }
+
+  .navbar-item:hover {
+    border-bottom: 2px solid var(--preto);
+  }
+
+  .navbar-item:active {
+    color: var(--vermelho);
   }
 
   .cabecalho-lista {
@@ -313,5 +428,34 @@ header {
 
   .experiencia-card p {
     max-width: 1000px;
+  }
+
+  /* HABILIDADES */
+
+  .conteudo-habilidades h2 {
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
+
+  .conteudo-habilidades h3 {
+    font-size: 48px;
+  }
+  .conteudo-habilidades img {
+    width: 50px;
+  }
+
+  .card-habilidades {
+    height: 200px;
+    max-width: 70%;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+  .card-habilidades.card2 {
+    margin-left: 10%;
+  }
+
+  .card-habilidades.card3 {
+    margin-left: 20%;
   }
 }

@@ -20,16 +20,16 @@
       <nav>
         <ul class="cabecalho-lista">
           <li>
-            <a href="/">Home</a>
+            <a class="navbar-item" href="/">Home</a>
           </li>
           <li>
-            <a href="#projetos">Projetos</a>
+            <a class="navbar-item" href="#projetos">Projetos</a>
           </li>
           <li>
-            <a href="/#experiencias">Experiências</a>
+            <a class="navbar-item" href="/#experiencias">Experiências</a>
           </li>
           <li>
-            <a href="/#habilidades">Habilidades</a>
+            <a class="navbar-item" href="/#habilidades">Habilidades</a>
           </li>
         </ul>
       </nav>
@@ -143,10 +143,12 @@
         <h2>/HABILIDADES</h2>
         <ul>
           <li>
-            <button>
-              <h3>WEB DESIGN E DEV</h3>
-              <img src="imagens/code.svg" />
-              <p>
+            <button class="card-habilidades card1">
+              <div class="habilidade-desc">
+                <h3>WEB DESIGN E DEV</h3>
+                <img src="imagens/code.svg" />
+              </div>
+              <p class="texto-habilidades">
                 Transformo ideias em experiências digitais responsivas com
                 React, JavaScript, HTML5 e CSS, garantindo navegação fluida e
                 perfeita em qualquer dispositivo.
@@ -154,10 +156,12 @@
             </button>
           </li>
           <li>
-            <button>
-              <h3>UI/UX DESIGN</h3>
-              <img src="imagens/pen.svg" />
-              <p>
+            <button class="card-habilidades card2">
+              <div class="habilidade-desc">
+                <h3>UI/UX DESIGN</h3>
+                <img src="imagens/pen.svg" />
+              </div>
+              <p class="texto-habilidades">
                 Desenho interfaces intuitivas e elegantes, aliando usabilidade,
                 estética e arquiteturas visuais pensadas para proporcionar uma
                 experiência fluida e marcante.
@@ -165,16 +169,47 @@
             </button>
           </li>
           <li>
-            <button>
-              <h3>VISUAL & IDENTITY DESIGN/h3>
-              <img src="imagens/laptop.svg" />
-              <p>
-                Crio identidades visuais marcantes e elementos gráficos sob medida, unindo ilustração digital e branding para construir a personalidade única de cada projeto.
+            <button class="card-habilidades card3">
+              <div class="habilidade-desc">
+                <h3>VISUAL & IDENTITY DESIGN</h3>
+                <img src="imagens/laptop.svg" />
+              </div>
+              <p class="texto-habilidades">
+                Crio identidades visuais marcantes e elementos gráficos sob
+                medida, unindo ilustração digital e branding para construir a
+                personalidade única de cada projeto.
               </p>
             </button>
           </li>
         </ul>
       </section>
+      <section class="conteudo-contato">
+        <div class="botao-disponivel">
+          <img src="imagens/circulo-verde.png" />
+          <h3>Disponível para Contato</h3>
+        </div>
+        <h2>ALGUM PROJETO EM MENTE?</h2>
+        <p class="texto-contato">
+          Juntos, podemos criar algo limpo e impactante! Vamos colaborar para
+          trazer nossas ideias à vida que resoe com todos.
+        </p>
+        <div class="contatos-formas">
+          <p>Whatsapp: (21)993569395</p>
+          <p>email: joaopinho.dev.br@gmail.com</p>
+        </div>
+
+        <div>
+          <a href="www.linkedin.com/in/joaomateuspinho" target="_blank"
+            >Linkedin</a
+          >
+          <a href="https://www.instagram.com/jmpinhos/" target="_blank"
+            >Instagram</a
+          >
+
+          <a href="https://github.com/jmpinho" target="_blank">Github</a>
+        </div>
+      </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
