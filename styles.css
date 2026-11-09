@@ -512,3 +512,29 @@ header {
     border-bottom: 2px solid var(--preto);
   }
 }
+
+/* BOTÃO DE IDIOMA */
+
+.botao-idioma {
+  font-family: var(--fonte-secundaria);
+  font-size: 14px;
+  color: var(--preto);
+  background: transparent;
+  border: 1px solid var(--preto);
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-left: 20px;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.botao-idioma:hover {
+  background: var(--preto);
+  color: var(--branco);
+}
+
+.botao-idioma:focus-visible {
+  outline: 2px solid var(--vermelho);
+  outline-offset: 2px;
+}

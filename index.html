@@ -11,17 +11,19 @@
     />
     <link rel="shortcut icon" href="imagens/favicon.webp" type="image/webp" />
     <link rel="stylesheet" href="styles.css" />
-    <title>João Mateus</title>
+    <title data-i18n="meta.title">João Mateus</title>
     <meta
+      id="meta-description"
       name="description"
       content="Portfólio de João Mateus, bacharel em Ciência da Computação e desenvolvedor front-end. Projetos em React, UI/UX e desenvolvimento web."
     />
     <meta name="author" content="João Mateus Pinho da Silva" />
     <meta name="theme-color" content="#000000" />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:title" content="João Mateus | Desenvolvedor Front-end" />
+    <meta id="og-locale" property="og:locale" content="pt_BR" />
+    <meta id="og-title" property="og:title" content="João Mateus | Desenvolvedor Front-end" />
     <meta
+      id="og-description"
       property="og:description"
       content="Projetos em React, UI/UX e desenvolvimento web."
     />
@@ -49,42 +51,56 @@
             <a class="navbar-item" href="/">Home</a>
           </li>
           <li>
-            <a class="navbar-item" href="#projetos">Projetos</a>
+            <a class="navbar-item" href="#projetos" data-i18n="nav.projects">Projetos</a>
           </li>
           <li>
-            <a class="navbar-item" href="#experiencias">Experiências</a>
+            <a class="navbar-item" href="#experiencias" data-i18n="nav.experience">Experiências</a>
           </li>
           <li>
-            <a class="navbar-item" href="#habilidades">Habilidades</a>
+            <a class="navbar-item" href="#habilidades" data-i18n="nav.skills">Habilidades</a>
           </li>
         </ul>
       </nav>
-      <a href="#contatos" class="cabecalho-lista contatos">Contatos</a>
+      <a href="#contatos" class="cabecalho-lista contatos" data-i18n="nav.contact"
+        >Contatos</a
+      >
+      <button
+        type="button"
+        id="botao-idioma"
+        class="botao-idioma"
+        aria-label="Switch language"
+      >
+        EN
+      </button>
     </header>
     <main>
       <section class="conteudo-home" id="home">
         <div class="home-title">
           <h2>FRONT END DESIGNER</h2>
-          <h3>BASED IN BRASIL</h3>
+          <h3 data-i18n="home.based">BASED IN BRASIL</h3>
         </div>
         <div class="details">
           <div class="main-frame">
             <div class="details-skills">
-              <p>/ DESENVOLVEDOR FRONT END</p>
-              <p>/ WEB DESIGN (UI/UX)</p>
-              <p>/ DESENVOLVIMENTO DE APLICAÇÕES</p>
+              <p data-i18n="home.skill1">/ DESENVOLVEDOR FRONT END</p>
+              <p data-i18n="home.skill2">/ WEB DESIGN (UI/UX)</p>
+              <p data-i18n="home.skill3">/ DESENVOLVIMENTO DE APLICAÇÕES</p>
             </div>
-            <img class="foto-principal" src="imagens/foto-intro.jpg" />
+            <img
+              class="foto-principal"
+              src="imagens/foto-intro.jpg"
+              alt="João Mateus"
+            />
           </div>
-          <p class="home-intro">
+          <p class="home-intro" data-i18n="home.intro">
             SOU UM DESIGNER UI/UX E DESENVOLVEDOR FRONT-END, QUE DESENVOLVE
             EXPERIÊNCIAS WEB PARA EMPRESAS DE TODOS OS TAMANHOS
           </p>
         </div>
       </section>
       <section class="conteudo-projetos" id="projetos">
-        <h2>PROJETOS</h2>
-        <p>
+        <h2 data-i18n="projects.title">PROJETOS</h2>
+        <p data-i18n="projects.intro">
           EM SEGUIDA ALGUNS DOS MEUS PROJETOS QUE FIZ DURANTE MINHA TRAJETÓRIA
           NO DESENVOLVIMENTO WEB E DESIGN
         </p>
@@ -94,11 +110,12 @@
               <img
                 src="imagens/synapseCard.png"
                 alt="imagem do projeto Synapse"
+                data-i18n-alt="projects.synapse.alt"
                 class="imagem-pb"
               />
               <footer>
                 <h3>Synapse</h3>
-                <p>Educacional | Website | React</p>
+                <p data-i18n="projects.synapse.tags">Educacional | Website | React</p>
               </footer>
             </a>
           </li>
@@ -107,6 +124,7 @@
               <img
                 src="imagens/chaLuaDeJade.png"
                 alt="imagem do projeto Chá Lua de Jade"
+                data-i18n-alt="projects.cha.alt"
                 class="imagem-pb"
               />
               <footer>
@@ -117,9 +135,13 @@
           </li>
           <li>
             <a href="/">
-              <img src="imagens/coming-soon.png" alt="Mais em breve" />
+              <img
+                src="imagens/coming-soon.png"
+                alt="Mais em breve"
+                data-i18n-alt="projects.soon.alt"
+              />
               <footer>
-                <h3>Mais projetos em andamento</h3>
+                <h3 data-i18n="projects.soon.title">Mais projetos em andamento</h3>
                 <p>Coming soon</p>
               </footer>
             </a>
@@ -127,46 +149,48 @@
         </ul>
       </section>
       <section class="conteudo-experiencias" id="experiencias">
-        <h2>/EXPERIÊNCIAS E CERTIFICAÇÕES</h2>
+        <h2 data-i18n="exp.title">/EXPERIÊNCIAS E CERTIFICAÇÕES</h2>
         <div class="experiencias">
           <article class="experiencia-card">
             <div>
               <h3>Tech4Jobs</h3>
-              <p>
+              <p data-i18n="exp.t4j.desc">
                 Curso com certificação emitido pela Tech4Me que abordou
                 fundamentos web para desenvolvedores front-end
               </p>
             </div>
-            <p>AGO 2025 - MAR 2026</p>
+            <p data-i18n="exp.t4j.date">AGO 2025 - MAR 2026</p>
           </article>
           <article class="experiencia-card">
             <div>
               <h3>Cambridge Exam B2</h3>
-              <p>
+              <p data-i18n="exp.cam.desc">
                 Certificado de conclusão do exame de Cambridge de Proficiência
                 em Inglês
               </p>
             </div>
-            <p>JAN 2022 - DEZ 2023</p>
+            <p data-i18n="exp.cam.date">JAN 2022 - DEZ 2023</p>
           </article>
           <article class="experiencia-card">
             <div>
               <h3>Tech4Teens</h3>
-              <p>Desenvolvimento de jogos com JavaScript, Python e Arduino</p>
+              <p data-i18n="exp.t4t.desc">
+                Desenvolvimento de jogos com JavaScript, Python e Arduino
+              </p>
             </div>
             <p>JAN 2022 - JAN 2023</p>
           </article>
           <article class="experiencia-card">
             <div>
               <h3>English House</h3>
-              <p>Curso de inglês do nível básico ao avançado</p>
+              <p data-i18n="exp.eh.desc">Curso de inglês do nível básico ao avançado</p>
             </div>
-            <p>JAN 2016 - DEZ 2023</p>
+            <p data-i18n="exp.eh.date">JAN 2016 - DEZ 2023</p>
           </article>
         </div>
       </section>
       <section class="conteudo-habilidades" id="habilidades">
-        <h2>/HABILIDADES</h2>
+        <h2 data-i18n="skills.title">/HABILIDADES</h2>
         <ul>
           <li>
             <button class="card-habilidades card1">
@@ -174,7 +198,7 @@
                 <h3>WEB DEVELOPMENT</h3>
                 <img src="imagens/code.svg" />
               </div>
-              <p class="texto-habilidades">
+              <p class="texto-habilidades" data-i18n="skills.s1">
                 Transformo ideias em experiências digitais responsivas com
                 React, JavaScript, HTML5 e CSS, garantindo navegação fluida e
                 perfeita em qualquer dispositivo.
@@ -187,7 +211,7 @@
                 <h3>UI/UX DESIGN</h3>
                 <img src="imagens/pen.svg" />
               </div>
-              <p class="texto-habilidades">
+              <p class="texto-habilidades" data-i18n="skills.s2">
                 Desenho interfaces intuitivas e elegantes, aliando usabilidade,
                 estética e arquiteturas visuais pensadas para proporcionar uma
                 experiência fluida e marcante.
@@ -200,7 +224,7 @@
                 <h3>VISUAL & IDENTITY</h3>
                 <img src="imagens/laptop.svg" />
               </div>
-              <p class="texto-habilidades">
+              <p class="texto-habilidades" data-i18n="skills.s3">
                 Crio identidades visuais marcantes e elementos gráficos sob
                 medida, unindo ilustração digital e branding para construir a
                 personalidade única de cada projeto.
@@ -212,16 +236,16 @@
       <section class="conteudo-contato" id="contatos">
         <div class="botao-disponivel">
           <img src="imagens/circulo-verde.png" />
-          <h3>Disponível para Contato</h3>
+          <h3 data-i18n="contact.available">Disponível para Contato</h3>
         </div>
-        <h2>ALGUM PROJETO EM MENTE?</h2>
-        <p class="texto-contato">
+        <h2 data-i18n="contact.title">ALGUM PROJETO EM MENTE?</h2>
+        <p class="texto-contato" data-i18n="contact.text">
           Juntos, podemos criar algo limpo e impactante! Vamos colaborar para
           dar vida a ideias que conectem e toquem a todos
         </p>
         <div class="contatos-formas">
           <p>Whatsapp: (21)993569395</p>
-          <p>email: joaopinho.dev.br@gmail.com</p>
+          <p data-i18n="contact.email">email: joaopinho.dev.br@gmail.com</p>
         </div>
 
         <div class="contato-redes">

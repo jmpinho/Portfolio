@@ -34,6 +34,7 @@ Este é o meu site pessoal, onde reúno projetos, experiências, certificações
 - **Tipografia:** [Sansation](https://fonts.google.com/specimen/Sansation) nos títulos e [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) nos detalhes, carregadas pelo Google Fonts.
 - **SEO básico:** `description`, `author`, `theme-color` e tags Open Graph configuradas.
 - **Navegação por âncoras:** menu fixo que leva direto a cada seção.
+- **Português e inglês:** botão PT/EN no cabeçalho. O texto em português fica no HTML e as traduções em inglês ficam em `script.js`. A escolha é salva no navegador e também funciona com `?lang=en` na URL.
 
 ## Estrutura do projeto
 
@@ -42,7 +43,7 @@ portfolio/
 ├── imagens/          # Foto, logo, favicon, ícones SVG e imagens dos projetos
 ├── index.html        # Estrutura e conteúdo da página
 ├── styles.css        # Estilos, variáveis de tema e responsividade
-├── script.js         # Interação dos cards de habilidades
+├── script.js         # Cards de habilidades e troca de idioma (PT/EN)
 └── README.md
 ```
 
