@@ -371,7 +371,7 @@ header {
   /* PROJETOS */
 
   .conteudo-projetos {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .conteudo-projetos h2 {
@@ -509,8 +509,6 @@ header {
   }
 
   .contato-redes a:hover {
-    align-items: center;
-    gap: 30px;
     border-bottom: 2px solid var(--preto);
   }
 }
