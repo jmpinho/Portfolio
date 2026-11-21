@@ -538,3 +538,62 @@ header {
   outline: 2px solid var(--vermelho);
   outline-offset: 2px;
 }
+
+/* ---------- ANIMAÇÕES DE SCROLL ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition-delay: var(--delay, 0s);
+}
+
+.reveal.da-esquerda {
+  transform: translateX(-60px);
+}
+.reveal.da-direita {
+  transform: translateX(60px);
+}
+.reveal.zoom {
+  transform: scale(0.9);
+}
+
+.reveal.visivel {
+  opacity: 1;
+  transform: none;
+}
+
+.barra-progresso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--vermelho);
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: 100;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.navbar.rolou {
+  background: rgba(242, 242, 242, 0.85);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.foto-principal {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

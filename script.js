@@ -138,3 +138,51 @@ botaoIdioma.addEventListener("click", () => {
 });
 
 aplicarIdioma(idiomaInicial());
+
+/* ---------- Animações de scroll ---------- */
+
+// 1) Revelar elementos ao entrar na tela
+const observador = new IntersectionObserver(
+  (entradas) => {
+    entradas.forEach((entrada) => {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add("visivel");
+        observador.unobserve(entrada.target); 
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+document.querySelectorAll(".reveal").forEach((el) => observador.observe(el));
+
+// 2) Barra de progresso, navbar e parallax 
+const barra = document.getElementById("barra-progresso");
+const navbar = document.querySelector(".navbar");
+const foto = document.querySelector(".foto-principal");
+let aguardando = false;
+
+function aoRolar() {
+  const rolagem = window.scrollY;
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+
+  barra.style.transform = `scaleX(${total > 0 ? rolagem / total : 0})`;
+  navbar.classList.toggle("rolou", rolagem > 20);
+
+  if (foto && rolagem < window.innerHeight) {
+    foto.style.transform = `translateY(${rolagem * 0.15}px)`;
+  }
+  aguardando = false;
+}
+
+window.addEventListener(
+  "scroll",
+  () => {
+    if (!aguardando) {
+      requestAnimationFrame(aoRolar);
+      aguardando = true;
+    }
+  },
+  { passive: true }
+);
+aoRolar();

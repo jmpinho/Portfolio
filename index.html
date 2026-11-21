@@ -51,6 +51,7 @@
     />
   </head>
   <body>
+    <div class="barra-progresso" id="barra-progresso"></div>
     <header class="navbar">
       <a href="/">
         <img src="imagens/logo_navbar.png" alt="Logo" />
@@ -98,8 +99,14 @@
     <main>
       <section class="conteudo-home" id="home">
         <div class="home-title">
-          <h2>FRONT END DESIGNER</h2>
-          <h3 data-i18n="home.based">BASED IN BRASIL</h3>
+          <h2 class="reveal">FRONT END DESIGNER</h2>
+          <h3
+            data-i18n="home.based"
+            class="home-intro reveal"
+            style="--delay: 0.2s"
+          >
+            BASED IN BRASIL
+          </h3>
         </div>
         <div class="details">
           <div class="main-frame">
@@ -127,13 +134,13 @@
           NO DESENVOLVIMENTO WEB E DESIGN
         </p>
         <ul class="projetos-lista">
-          <li>
+          <li class="reveal" style="--delay: 0s">
             <a href="https://github.com/jmpinho/Synapse" target="_blank">
               <img
                 src="imagens/synapseCard.png"
                 alt="imagem do projeto Synapse"
                 data-i18n-alt="projects.synapse.alt"
-                class="imagem-pb"
+                class="imagem-pb reveal"
               />
               <footer>
                 <h3>Synapse</h3>
@@ -143,7 +150,7 @@
               </footer>
             </a>
           </li>
-          <li>
+          <li class="reveal" style="--delay: 0.15s">
             <a href="https://github.com/jmpinho/cha-lua-de-jade">
               <img
                 src="imagens/chaLuaDeJade.png"
@@ -157,7 +164,7 @@
               </footer>
             </a>
           </li>
-          <li>
+          <li class="reveal" style="--delay: 0.3s">
             <a href="/">
               <img
                 src="imagens/coming-soon.png"
@@ -187,7 +194,7 @@
             </div>
             <p data-i18n="exp.t4j.date">AGO 2025 - MAR 2026</p>
           </article>
-          <article class="experiencia-card">
+          <article class="experiencia-card reveal da-esquerda">
             <div>
               <h3>Cambridge Exam B2</h3>
               <p data-i18n="exp.cam.desc">
@@ -197,7 +204,7 @@
             </div>
             <p data-i18n="exp.cam.date">JAN 2022 - DEZ 2023</p>
           </article>
-          <article class="experiencia-card">
+          <article class="experiencia-card reveal da-esquerda">
             <div>
               <h3>Tech4Teens</h3>
               <p data-i18n="exp.t4t.desc">
@@ -206,7 +213,7 @@
             </div>
             <p>JAN 2022 - JAN 2023</p>
           </article>
-          <article class="experiencia-card">
+          <article class="experiencia-card reveal da-esquerda">
             <div>
               <h3>English House</h3>
               <p data-i18n="exp.eh.desc">
@@ -220,7 +227,7 @@
       <section class="conteudo-habilidades" id="habilidades">
         <h2 data-i18n="skills.title">/HABILIDADES</h2>
         <ul>
-          <li>
+          <li class="reveal da-esquerda">
             <button class="card-habilidades card1">
               <div class="habilidade-desc">
                 <h3>WEB DEVELOPMENT</h3>
@@ -233,7 +240,7 @@
               </p>
             </button>
           </li>
-          <li>
+          <li class="reveal zoom">
             <button class="card-habilidades card2">
               <div class="habilidade-desc">
                 <h3>UI/UX DESIGN</h3>
@@ -246,7 +253,7 @@
               </p>
             </button>
           </li>
-          <li>
+          <li class="reveal da-direita">
             <button class="card-habilidades card3">
               <div class="habilidade-desc">
                 <h3>VISUAL & IDENTITY</h3>
